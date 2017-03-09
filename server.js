@@ -11,7 +11,7 @@
 
 'use strict';  /* always for Node.JS, never global in the browser */
 var cfenv = require('cfenv');
-var http 	= require('https'),
+var http 	= require('http'),
     //https 	= require('https'),
     express = require('express'),  // THE std library for serving HTTP
     RED     = require('node-red'),
@@ -43,6 +43,7 @@ app.use( nrSettings.httpAdminRoot, RED.httpAdmin );
 
 // Serve the http nodes from /
 app.use( nrSettings.httpNodeRoot, RED.httpNode );
+app.use("/devices",RED.);
 
 httpServer.listen( nrPort, function(){
   console.log('Express 4 server listening on port %s, serving node-red', nrPort);
