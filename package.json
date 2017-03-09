@@ -2,15 +2,31 @@
 	"name": "NodejsStarterApp",
 	"version": "0.0.1",
 	"private": true,
-	"scripts": {
-		"start": "node app.js"
-	},
-	"dependencies": {
-		"express": "4.13.x",
-		"cfenv": "1.0.x"
-	},
+	"scripts":  {
+    "start": "node server.js",
+    "restart": "sudo systemctl restart nr-live2",
+    "logs": "sudo journalctl -u nr-live2 -e -f -n 25",
+    "admin": "node-red-admin ",
+    "patch": "npm version patch -m \"Bumped to %s\" ",
+    "minor": "npm version minor",
+    "major": "npm version major"
+  },
+	"dependencies":{
+    "express": "4.13.x",
+    "when": "~3.*",
+    "nano": "~5.11.0",
+    "cfenv":"1.0.x",
+    "feedparser":"~0.19.2",
+    "redis":"~0.10.1",
+    "node-red": "0.*",
+    "node-red-bluemix-nodes":"1.*",
+    "node-red-node-watson":"0.*",
+     "node-red-node-cf-cloudant":"0.x",
+    "node-red-contrib-scx-ibmiotapp":"0.0.43"
+  },
 	"repository": {},
 	"engines": {
-		"node": "4.x"
-	} 
+     "node": "4.2.4",
+     "npm": "2.11.3"
+  }
 }

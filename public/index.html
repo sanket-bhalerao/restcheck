@@ -1,26 +1,169 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>NodeJS Starter Application</title>
+<head>
+    <title>Motor Simulator</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/MatW.png">
     <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
+</head>
+ 
+<body style="background-image: url(./images/02BG.JPG);background-size:cover">
+    <div>
+        <span class="motor-heading">
+            Motor Simulator
+        </span>
+    </div>
+    <form id="myForm">
+        <!--<div class="box" style="border: 0px">
+            <img src="images/logo-and-text.png" width="70px" height="40px"></img>
+        </div>-->
+        <div class="box">
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Reference No</span><span style="color: red">*</span>
+                </div>
+                <div class="box-item">
+                    <input type="text" name="referenceNumber" class="box-input" required>
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item  item-label">
+                    <span class="item-label">Date</span><span style="color: red">*</span>
+                </div>
+                <div class="box-item">
+                    <input type="datetime-local" placeholder="mm/dd/yyyy hh:mm AMPM" name="measurementDate" class="box-input" required>
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Voltage AB</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="voltageAB" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Voltage BC</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="voltageBC" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Voltage CA</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="voltageCA" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Current A</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="currentA" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Current B</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="currentB" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Current C</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="currentC" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Power Factor (%)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="powerFactor" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Measured Speed (RPM)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="measuredSpeed" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Power Draw (kW)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="powerDraw" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>THD (%)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="totalHarmonicDistortion" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Insulation Resistance (MegOhms)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="insulationResistance" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Vibration (in/sec)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="vibration" class="box-input">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-item item-label">
+                    <span>Surge/Motor Circuit (%)</span>
+                </div>
+                <div class="box-item">
+                    <input type="number" name="surgeMotorCircuit" class="box-input">
+                </div>
+            </div>
+            <hr>
+            <div class="box-row">
+                <div class="box-item item-label">
+
+                </div>
+                <div class="box-item ">
+                    <button type="button" class="update" id="update" onclick="updatefun()">Update</button>
+                    <button type="button" class="reset" id="reset" onclick="resetfun()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="box resp_ws">
+        <span id="wsresponse" class="white-text"></span><br>
+        <!--<span id="wsresponse1"></span>-->
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+         wsFunction();
+    </script>
+    
+</body>
 
 </html>

@@ -1,0 +1,420 @@
+[
+    {
+        "id": "3aae3582.cbcaba",
+        "type": "tab",
+        "label": "Flow 1"
+    },
+    {
+        "id": "445c7dde.4fa144",
+        "type": "tab",
+        "label": "Flow 2"
+    },
+    {
+        "id": "a1dfc6f1.1dec48",
+        "type": "ibmiot",
+        "z": "",
+        "name": "Submeter",
+        "keepalive": "60",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "9e925b7b.9b3dd8",
+        "type": "ibmiot",
+        "z": "",
+        "name": "Submeter2",
+        "keepalive": "60",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "a1b3d6f.a416da8",
+        "type": "cloudant",
+        "z": "",
+        "host": "25a825b1-1bff-4985-987a-8a0da7a50c76-bluemix.cloudant.com",
+        "name": "cloudant"
+    },
+    {
+        "id": "d0108649.fb94c8",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "/maw/ws",
+        "wholemsg": "false"
+    },
+    {
+        "id": "c67498d4.79c358",
+        "type": "inject",
+        "z": "3aae3582.cbcaba",
+        "name": "Simulated Device 2 - MB-124",
+        "topic": "",
+        "payload": "     {   \"referenceNumber\": \"MB-124\",   \"measurementDate\": \"2017-02-24T12:37:53.000Z\",   \"voltageAB\": 450,   \"voltageBC\": 451,   \"voltageCA\": 444,   \"currentA\": 5,   \"currentB\": 6,   \"currentC\": 7,   \"powerFactor\": 90,    \"measuredSpeed\": 1800,    \"powerDraw\": 50,    \"totalHarmonicDistortion\": 10,    \"insulationResistance\": 20,    \"vibration\": 20,    \"surgeMotorCircuit\": 10      }    ",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 184,
+        "y": 124.19999694824219,
+        "wires": [
+            [
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "c48a025c.4b789",
+        "type": "http in",
+        "z": "3aae3582.cbcaba",
+        "name": "submeter",
+        "url": "/submeter",
+        "method": "post",
+        "swaggerDoc": "",
+        "x": 113.00001525878906,
+        "y": 411.2000274658203,
+        "wires": [
+            [
+                "36837140.0c56ee",
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "86bfef0f.225f9",
+        "type": "ibmiot out",
+        "z": "3aae3582.cbcaba",
+        "authentication": "apiKey",
+        "apiKey": "a1dfc6f1.1dec48",
+        "outputType": "evt",
+        "deviceId": "msg.deviceId",
+        "deviceType": "mATwDevType",
+        "eventCommandType": "data",
+        "format": "json",
+        "data": "data",
+        "qos": "2",
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 781,
+        "y": 288.1999969482422,
+        "wires": []
+    },
+    {
+        "id": "a0a96e3f.ab6fe",
+        "type": "debug",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 780,
+        "y": 96.19999694824219,
+        "wires": []
+    },
+    {
+        "id": "36837140.0c56ee",
+        "type": "debug",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 327.00001525878906,
+        "y": 407.20001220703125,
+        "wires": []
+    },
+    {
+        "id": "fe63cc58.91dd4",
+        "type": "http response",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "x": 621,
+        "y": 489.2000274658203,
+        "wires": []
+    },
+    {
+        "id": "9174a878.844ae8",
+        "type": "function",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "func": "msg.headers = {\n    'Access-Control-Allow-Origin' : '*',\n    'Access-Control-Allow-Methods' : 'GET, POST, OPTIONS, PUT, PATCH, DELETE',\n    'Access-Control-Allow-Headers' : 'X-Requested-With,content-type',\n    'Access-Control-Allow-Credentials' : 'true'\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 452.00001525878906,
+        "y": 489.20001220703125,
+        "wires": [
+            [
+                "fe63cc58.91dd4"
+            ]
+        ]
+    },
+    {
+        "id": "2e668c4b.2b1cf4",
+        "type": "template",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE HTML>\n<html lang=\"en-US\">\n    <head>\n        <meta charset=\"UTF-8\">\n        \n        \n        <title>Page Redirection</title>\n    </head>\n    <body>\n        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->\n        If you are not redirected automatically, follow this <a href='https://maw-simulatorui.mybluemix.net'>link to example</a>.\n    </body>\n</html>",
+        "x": 312.00001525878906,
+        "y": 489.20001220703125,
+        "wires": [
+            [
+                "9174a878.844ae8"
+            ]
+        ]
+    },
+    {
+        "id": "be47ae8.b1f1c5",
+        "type": "inject",
+        "z": "3aae3582.cbcaba",
+        "name": "Simulated Device 1 - MB-123",
+        "topic": "",
+        "payload": "  {   \"referenceNumber\": \"MB-123\",   \"measurementDate\": \"2017-02-24T12:37:53.000Z\",   \"voltageAB\": 450,   \"voltageBC\": 451,   \"voltageCA\": 444,   \"currentA\": 5,   \"currentB\": 6,   \"currentC\": 7,   \"powerFactor\": 90,    \"measuredSpeed\": 1800,    \"powerDraw\": 50,    \"totalHarmonicDistortion\": 10,    \"insulationResistance\": 20,    \"vibration\": 20,    \"surgeMotorCircuit\": 10      }    ",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 184.50001525878906,
+        "y": 41,
+        "wires": [
+            [
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "b74f8fcf.fcbd6",
+        "type": "inject",
+        "z": "3aae3582.cbcaba",
+        "name": "Simulated Device 3 - MB-125",
+        "topic": "",
+        "payload": "  {   \"referenceNumber\": \"MB-125\",   \"measurementDate\": \"2017-02-24T12:37:53.000Z\",   \"voltageAB\": 450,   \"voltageBC\": 451,   \"voltageCA\": 444,   \"currentA\": 5,   \"currentB\": 6,   \"currentC\": 7,   \"powerFactor\": 90,    \"measuredSpeed\": 1800,    \"powerDraw\": 50,    \"totalHarmonicDistortion\": 10,    \"insulationResistance\": 20,    \"vibration\": 20,    \"surgeMotorCircuit\": 10      }    ",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 180.50001525878906,
+        "y": 207,
+        "wires": [
+            [
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "41320df4.301144",
+        "type": "ibmiot in",
+        "z": "3aae3582.cbcaba",
+        "authentication": "apiKey",
+        "apiKey": "a1dfc6f1.1dec48",
+        "inputType": "cmd",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": "2",
+        "x": 111.50001525878906,
+        "y": 653.3999938964844,
+        "wires": [
+            [
+                "6768903e.7643b",
+                "2f8b4998.3f7986"
+            ]
+        ]
+    },
+    {
+        "id": "6768903e.7643b",
+        "type": "debug",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 297.5,
+        "y": 580.0000457763672,
+        "wires": []
+    },
+    {
+        "id": "8cb94182.a00c6",
+        "type": "function",
+        "z": "3aae3582.cbcaba",
+        "name": "Device ID Appender ",
+        "func": "msg.deviceId = msg.payload.referenceNumber;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 287.1999969482422,
+        "wires": [
+            [
+                "86bfef0f.225f9",
+                "a0a96e3f.ab6fe"
+            ]
+        ]
+    },
+    {
+        "id": "eb33e466.f72f38",
+        "type": "inject",
+        "z": "3aae3582.cbcaba",
+        "name": "Simulated Device 3 - MB-126",
+        "topic": "",
+        "payload": "  {   \"referenceNumber\": \"MB-126\",   \"measurementDate\": \"2017-02-24T12:37:53.000Z\",   \"voltageAB\": 450,   \"voltageBC\": 451,   \"voltageCA\": 444,   \"currentA\": 5,   \"currentB\": 6,   \"currentC\": 7,   \"powerFactor\": 90,    \"measuredSpeed\": 1800,    \"powerDraw\": 50,    \"totalHarmonicDistortion\": 10,    \"insulationResistance\": 20,    \"vibration\": 20,    \"surgeMotorCircuit\": 10      }    ",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 183,
+        "y": 274.1999969482422,
+        "wires": [
+            [
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "2f8b4998.3f7986",
+        "type": "websocket out",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "server": "d0108649.fb94c8",
+        "client": "",
+        "x": 406,
+        "y": 653.2000122070312,
+        "wires": []
+    },
+    {
+        "id": "cfb10623.723ac8",
+        "type": "ibmiot in",
+        "z": "445c7dde.4fa144",
+        "authentication": "apiKey",
+        "apiKey": "a1dfc6f1.1dec48",
+        "inputType": "evt",
+        "deviceId": "matw-submeter1",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": true,
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allEvents": true,
+        "allCommands": true,
+        "allFormats": true,
+        "qos": 0,
+        "x": 80,
+        "y": 146,
+        "wires": [
+            [
+                "7bc2b249.ab211c",
+                "bd2fbafb.6fbea8"
+            ]
+        ]
+    },
+    {
+        "id": "7bc2b249.ab211c",
+        "type": "debug",
+        "z": "445c7dde.4fa144",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 121,
+        "y": 256,
+        "wires": []
+    },
+    {
+        "id": "9bfbb010.2db31",
+        "type": "http request",
+        "z": "445c7dde.4fa144",
+        "name": "send to MatW api",
+        "method": "PUT",
+        "ret": "obj",
+        "url": "http://54.225.109.199:8085/api/1.0/rest/motor/external/measurement",
+        "tls": "",
+        "x": 533.0001068115234,
+        "y": 148,
+        "wires": [
+            [
+                "d8034470.b23078",
+                "d33692f6.7d851"
+            ]
+        ]
+    },
+    {
+        "id": "d8034470.b23078",
+        "type": "debug",
+        "z": "445c7dde.4fa144",
+        "name": "m@w response",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 702.0000152587891,
+        "y": 55,
+        "wires": []
+    },
+    {
+        "id": "bd2fbafb.6fbea8",
+        "type": "function",
+        "z": "445c7dde.4fa144",
+        "name": "Add Device ID",
+        "func": "var incomingMsg = msg.payload;\nflow.set('deviceId',msg.deviceId)\nmsg.payload={};\nmsg.payload.data=[];\nmsg.payload.data[0]=incomingMsg;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 326.50001525878906,
+        "y": 147,
+        "wires": [
+            [
+                "9bfbb010.2db31"
+            ]
+        ]
+    },
+    {
+        "id": "1718ec9f.a852f3",
+        "type": "ibmiot out",
+        "z": "445c7dde.4fa144",
+        "authentication": "apiKey",
+        "apiKey": "a1dfc6f1.1dec48",
+        "outputType": "cmd",
+        "deviceId": "msg.deviceId",
+        "deviceType": "mATwDevType",
+        "eventCommandType": "msg.eventOrCommandType",
+        "format": "json",
+        "data": "msg.payload",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 939.5000152587891,
+        "y": 149.8000030517578,
+        "wires": []
+    },
+    {
+        "id": "d33692f6.7d851",
+        "type": "function",
+        "z": "445c7dde.4fa144",
+        "name": "Convertor",
+        "func": "var devid = flow.get('deviceId');\nvar msg = {deviceId:devid,payload:msg.payload};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 745.5000152587891,
+        "y": 149,
+        "wires": [
+            [
+                "1718ec9f.a852f3"
+            ]
+        ]
+    }
+]
