@@ -51,7 +51,7 @@ httpServer.listen( nrPort, function(){
 
 var options = {
   host: "pxc4ql.internetofthings.ibmcloud.com",
-  path: '/api/v0002/device/types/mATwDevType/devices/OWASA-WTUL9215MO',
+  path: '/api/v0002/device/types/mATwDevType/devices/',
   method: 'GET',
   auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
 };
@@ -82,20 +82,22 @@ router.route("/devices").get(
     var retJson = {};
     https.request(options, function(res) {
       var some = {};
-      res.setEncoding('utf8');
+      // res.setEncoding('utf8');
       res.on('data', function (data) {
         resJson=data;
         some=data;
         console.log("******************************** " +JSON.stringify(some));
 
-        // for(var idx = 0; idx< resJson.results ; idx++){
-        //   if(resJson.results[idx].typeId == "mATwDevType"){
-        //     retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
-        //   }
-        // }
+
 
       }).on('end', function() {
         console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ " +JSON.stringify(some));
+        resJson=some;
+        for(var idx = 0; idx< resJson.results ; idx++){
+          if(resJson.results[idx].typeId == "mATwDevType"){
+            retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
+          }
+        }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
       });
