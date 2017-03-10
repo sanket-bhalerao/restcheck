@@ -78,7 +78,7 @@ var router = express.Router();
 router.route("/devices").get(
   function(request,response){
 
-    var resJson = null;
+    var resJson = {};
     var retJson = {};
     http.request(options, function(res) {
       res.setEncoding('utf8');
@@ -87,13 +87,15 @@ router.route("/devices").get(
         console.error("########################################################################");
         console.error(data);
         console.error("########################################################################");
+
+        for(var idx = 0; idx< resJson.results ; idx++){
+          if(resJson.results[idx].typeId == "mATwDevType"){
+            retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
+          }
+        }
       });
     }).end();
-    for(var idx = 0; idx< resJson.results ; idx++){
-      if(resJson.results[idx].typeId == "mATwDevType"){
-        retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
-      }
-    }
+
     response.json(retJson);
 
 
