@@ -87,15 +87,12 @@ router.route("/devices").get(
       res.on('data', function (data) {
         resJson=data;
         some=data;
-        console.log("******************************** " +JSON.stringify(some));
-
-
-
       }).on('end', function() {
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ " +JSON.stringify(some));
+
         resJson=JSON.parse(some);
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
+            console.log("device id : "+ resJson.results[idx].deviceId);
             retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
           }
         }
