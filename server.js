@@ -93,13 +93,11 @@ router.route("/devices").get(
         //     retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
         //   }
         // }
-        response.json(retJson);
+
       });
+      console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +resJson);
     }).end();
-
-
-
-
+    response.json(retJson);
   }
 );
 app.use("/api",router);
