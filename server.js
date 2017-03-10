@@ -55,7 +55,7 @@ var options = {
   method: 'GET',
   auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R',
   headers: { 'Content-Type': 'application/json' }
-}; 
+};
 
 // app.get("/devices",function(request,response){
 //   var resJson = null;
@@ -85,10 +85,11 @@ router.route("/devices").get(
       var some = {};
       res.setEncoding('utf8');
       res.on('data', function (data) {
-        resJson=data;
+        // resJson=data;
         some=data;
       }).on('end', function() {
 
+        console.log("resJson : " + resJson);
         resJson=some;
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
