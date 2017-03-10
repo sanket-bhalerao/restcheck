@@ -90,6 +90,7 @@ router.route("/devices").get(
       }).on('end', function() {
 
         some = some.replace(/\\/g, '');
+        console.log("some : " +JSON.stringify(some));
         resJson=JSON.parse(some);
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
