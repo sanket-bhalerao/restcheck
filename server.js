@@ -86,13 +86,13 @@ router.route("/devices").get(
         resJson=data;
       });
     }).end();
-    for(var idx = 0; idx< data.results ; idx++){
-      if(data.results[idx].typeId == "mATwDevType"){
-        retJson[data.results[idx].deviceId]=data.results[idx].metadata;
+    for(var idx = 0; idx< resJson.results ; idx++){
+      if(resJson.results[idx].typeId == "mATwDevType"){
+        retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
       }
     }
     response.json(retJson);
-  
+
 
   }
 );
