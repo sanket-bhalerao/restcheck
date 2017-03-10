@@ -55,7 +55,7 @@ var options = {
   method: 'GET',
   auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R',
   headers: { 'Content-Type': 'application/json' }
-};
+}; 
 
 // app.get("/devices",function(request,response){
 //   var resJson = null;
