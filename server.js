@@ -82,14 +82,14 @@ router.route("/devices").get(
     var resJson = {};
     var retJson = {};
     https.request(options, function(res) {
-      var some = {};
+      var some = "";
       res.setEncoding('utf8');
       res.on('data', function (data) {
         // resJson=data;
         some+=data;
       }).on('end', function() {
         resJson=some;
-        console.log("resJson : " + JSON.stringify(resJson));
+        console.log("resJson : " + JSON.stringify(resJson.results));
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
             console.log("device id : "+ resJson.results[idx].deviceId);
