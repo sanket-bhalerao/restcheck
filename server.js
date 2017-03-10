@@ -84,9 +84,7 @@ router.route("/devices").get(
       res.setEncoding('utf8');
       res.on('data', function (data) {
         resJson=data;
-        console.error("########################################################################");
-        console.error(data);
-        console.error("########################################################################");
+        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(data));
 
         // for(var idx = 0; idx< resJson.results ; idx++){
         //   if(resJson.results[idx].typeId == "mATwDevType"){
