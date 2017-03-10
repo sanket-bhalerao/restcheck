@@ -13,7 +13,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\analysis\\72-sentiment.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\analysis\\72-sentiment.js"
     },
     "inject": {
      "name": "inject",
@@ -23,7 +23,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\20-inject.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\20-inject.js"
     },
     "catch": {
      "name": "catch",
@@ -33,7 +33,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\25-catch.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\25-catch.js"
     },
     "status": {
      "name": "status",
@@ -43,7 +43,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\25-status.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\25-status.js"
     },
     "debug": {
      "name": "debug",
@@ -53,7 +53,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\58-debug.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\58-debug.js"
     },
     "link": {
      "name": "link",
@@ -64,7 +64,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\60-link.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\60-link.js"
     },
     "exec": {
      "name": "exec",
@@ -74,7 +74,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\75-exec.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\75-exec.js"
     },
     "function": {
      "name": "function",
@@ -84,7 +84,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\80-function.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\80-function.js"
     },
     "template": {
      "name": "template",
@@ -94,7 +94,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\80-template.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\80-template.js"
     },
     "delay": {
      "name": "delay",
@@ -104,7 +104,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\89-delay.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\89-delay.js"
     },
     "trigger": {
      "name": "trigger",
@@ -114,7 +114,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\89-trigger.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\89-trigger.js"
     },
     "comment": {
      "name": "comment",
@@ -124,7 +124,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\90-comment.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\90-comment.js"
     },
     "unknown": {
      "name": "unknown",
@@ -134,7 +134,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\core\\98-unknown.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\core\\98-unknown.js"
     },
     "rpi-gpio": {
      "name": "rpi-gpio",
@@ -147,7 +147,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\hardware\\36-rpi-gpio.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\hardware\\36-rpi-gpio.js"
     },
     "tls": {
      "name": "tls",
@@ -157,7 +157,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\05-tls.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\05-tls.js"
     },
     "mqtt": {
      "name": "mqtt",
@@ -169,7 +169,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\10-mqtt.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\10-mqtt.js"
     },
     "httpin": {
      "name": "httpin",
@@ -180,7 +180,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\21-httpin.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\21-httpin.js"
     },
     "httprequest": {
      "name": "httprequest",
@@ -190,7 +190,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\21-httprequest.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\21-httprequest.js"
     },
     "websocket": {
      "name": "websocket",
@@ -203,7 +203,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\22-websocket.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\22-websocket.js"
     },
     "watch": {
      "name": "watch",
@@ -213,7 +213,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\23-watch.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\23-watch.js"
     },
     "tcpin": {
      "name": "tcpin",
@@ -225,7 +225,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\31-tcpin.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\31-tcpin.js"
     },
     "udp": {
      "name": "udp",
@@ -236,7 +236,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\io\\32-udp.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\io\\32-udp.js"
     },
     "switch": {
      "name": "switch",
@@ -246,7 +246,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\logic\\10-switch.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\logic\\10-switch.js"
     },
     "change": {
      "name": "change",
@@ -256,7 +256,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\logic\\15-change.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\logic\\15-change.js"
     },
     "range": {
      "name": "range",
@@ -266,7 +266,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\logic\\16-range.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\logic\\16-range.js"
     },
     "split": {
      "name": "split",
@@ -277,7 +277,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\logic\\17-split.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\logic\\17-split.js"
     },
     "CSV": {
      "name": "CSV",
@@ -287,7 +287,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\parsers\\70-CSV.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\parsers\\70-CSV.js"
     },
     "HTML": {
      "name": "HTML",
@@ -297,7 +297,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\parsers\\70-HTML.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\parsers\\70-HTML.js"
     },
     "JSON": {
      "name": "JSON",
@@ -307,7 +307,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\parsers\\70-JSON.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\parsers\\70-JSON.js"
     },
     "XML": {
      "name": "XML",
@@ -317,7 +317,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\parsers\\70-XML.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\parsers\\70-XML.js"
     },
     "YAML": {
      "name": "YAML",
@@ -327,7 +327,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\parsers\\70-YAML.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\parsers\\70-YAML.js"
     },
     "tail": {
      "name": "tail",
@@ -337,7 +337,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\storage\\28-tail.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\storage\\28-tail.js"
     },
     "file": {
      "name": "file",
@@ -348,7 +348,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red\\nodes\\core\\storage\\50-file.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red\\nodes\\core\\storage\\50-file.js"
     }
    }
   },
@@ -367,7 +367,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\io\\31-tcpin-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\io\\31-tcpin-cf.js"
     },
     "udp": {
      "name": "udp",
@@ -377,7 +377,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\io\\32-udp-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\io\\32-udp-cf.js"
     },
     "mqlight": {
      "name": "mqlight",
@@ -388,7 +388,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\mqlight\\mqlight.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\mqlight\\mqlight.js"
     },
     "mongodb": {
      "name": "mongodb",
@@ -400,7 +400,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\mongo\\66-mongodb-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\mongo\\66-mongodb-cf.js"
     },
     "twilio": {
      "name": "twilio",
@@ -411,7 +411,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\twilio\\56-twilio-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\twilio\\56-twilio-cf.js"
     },
     "weather": {
      "name": "weather",
@@ -421,7 +421,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\weather\\weather_insights.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\weather\\weather_insights.js"
     },
     "businessrules": {
      "name": "businessrules",
@@ -431,7 +431,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\businessrules\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\businessrules\\v1.js"
     },
     "spssscoring": {
      "name": "spssscoring",
@@ -441,7 +441,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-bluemix-nodes",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-bluemix-nodes\\spss\\spssscoring.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-bluemix-nodes\\spss\\spssscoring.js"
     }
    }
   },
@@ -460,7 +460,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-contrib-scx-ibmiotapp",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-contrib-scx-ibmiotapp\\application\\97-iotnewapp-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-contrib-scx-ibmiotapp\\application\\97-iotnewapp-cf.js"
     }
    }
   },
@@ -478,7 +478,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-email",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-email\\61-email.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-email\\61-email.js"
     }
    }
   },
@@ -495,7 +495,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-feedparser",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-feedparser\\32-feedparse.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-feedparser\\32-feedparse.js"
     }
    }
   },
@@ -512,7 +512,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-rbe",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-rbe\\rbe.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-rbe\\rbe.js"
     }
    }
   },
@@ -531,7 +531,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-twitter",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-twitter\\27-twitter.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-twitter\\27-twitter.js"
     }
    }
   },
@@ -548,7 +548,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\conversation\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\conversation\\v1.js"
     },
     "watson-conversation-workspace-manager-v1": {
      "name": "watson-conversation-workspace-manager-v1",
@@ -558,7 +558,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\conversation\\v1-workspace-manager.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\conversation\\v1-workspace-manager.js"
     },
     "watson-conversation-v1-experimental": {
      "name": "watson-conversation-v1-experimental",
@@ -568,7 +568,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\conversation\\v1-exp.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\conversation\\v1-exp.js"
     },
     "watson-discovery-v1": {
      "name": "watson-discovery-v1",
@@ -578,7 +578,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\discovery\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\discovery\\v1.js"
     },
     "watson-discovery-v1-query-builder": {
      "name": "watson-discovery-v1-query-builder",
@@ -588,7 +588,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\discovery\\v1-query-builder.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\discovery\\v1-query-builder.js"
     },
     "watson-discovery-v1-experimental": {
      "name": "watson-discovery-v1-experimental",
@@ -598,7 +598,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\discovery\\v1-exp.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\discovery\\v1-exp.js"
     },
     "watson-document-conversion-v1": {
      "name": "watson-document-conversion-v1",
@@ -608,7 +608,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\document_conversion\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\document_conversion\\v1.js"
     },
     "watson-concept-insights-v2": {
      "name": "watson-concept-insights-v2",
@@ -622,7 +622,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\concept_insights\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\concept_insights\\v2.js"
     },
     "alchemy-date-extraction": {
      "name": "alchemy-date-extraction",
@@ -632,7 +632,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\alchemy_date_extraction\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\alchemy_date_extraction\\v1.js"
     },
     "watson-dialog-v1": {
      "name": "watson-dialog-v1",
@@ -642,7 +642,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\dialog\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\dialog\\v1.js"
     },
     "alchemy_language-v1": {
      "name": "alchemy_language-v1",
@@ -652,7 +652,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\alchemy_language\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\alchemy_language\\v1.js"
     },
     "watson-language-translator-v2": {
      "name": "watson-language-translator-v2",
@@ -662,7 +662,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_translator\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_translator\\v2.js"
     },
     "watson-language-translator-identify-v2": {
      "name": "watson-language-translator-identify-v2",
@@ -672,7 +672,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_translator_identify\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_translator_identify\\v2.js"
     },
     "watson-language-translator-util-v2": {
      "name": "watson-language-translator-util-v2",
@@ -682,7 +682,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_translator_util\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_translator_util\\v2.js"
     },
     "watson-language-identification-v1": {
      "name": "watson-language-identification-v1",
@@ -692,7 +692,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_identification\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_identification\\v1.js"
     },
     "watson-language-translate-v1": {
      "name": "watson-language-translate-v1",
@@ -702,7 +702,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_translation\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_translation\\v2.js"
     },
     "watson-language-translate-util-v1": {
      "name": "watson-language-translate-util-v1",
@@ -713,7 +713,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\language_translation_util\\v2.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\language_translation_util\\v2.js"
     },
     "watson-natural-language-classifier-v1": {
      "name": "watson-natural-language-classifier-v1",
@@ -723,7 +723,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\natural_language_classifier\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\natural_language_classifier\\v1.js"
     },
     "alchemy-news-v1": {
      "name": "alchemy-news-v1",
@@ -733,7 +733,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\alchemy_data_news\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\alchemy_data_news\\v1.js"
     },
     "watson-personality-insights-v1": {
      "name": "watson-personality-insights-v1",
@@ -743,7 +743,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\personality_insights\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\personality_insights\\v1.js"
     },
     "watson-personality-insights-v3": {
      "name": "watson-personality-insights-v3",
@@ -753,7 +753,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\personality_insights\\v3.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\personality_insights\\v3.js"
     },
     "watson-relationship-extraction-v1": {
      "name": "watson-relationship-extraction-v1",
@@ -763,7 +763,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\relationship_extraction\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\relationship_extraction\\v1.js"
     },
     "watson-retrieve-and-rank-v1": {
      "name": "watson-retrieve-and-rank-v1",
@@ -781,7 +781,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\retrieve_and_rank\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\retrieve_and_rank\\v1.js"
     },
     "watson-speech-to-text-v1": {
      "name": "watson-speech-to-text-v1",
@@ -791,7 +791,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\speech_to_text\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\speech_to_text\\v1.js"
     },
     "watson-speech-to-text-corpus-builder-v1": {
      "name": "watson-speech-to-text-corpus-builder-v1",
@@ -801,7 +801,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\speech_to_text\\v1-corpus-builder.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\speech_to_text\\v1-corpus-builder.js"
     },
     "watson-text-to-speech-v1": {
      "name": "watson-text-to-speech-v1",
@@ -811,7 +811,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\text_to_speech\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\text_to_speech\\v1.js"
     },
     "watson-text-to-speech-corpus-builder-v1": {
      "name": "watson-text-to-speech-corpus-builder-v1",
@@ -821,7 +821,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\text_to_speech\\v1-corpus-builder.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\text_to_speech\\v1-corpus-builder.js"
     },
     "watson-tone-analyzer-v3": {
      "name": "watson-tone-analyzer-v3",
@@ -831,7 +831,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\tone_analyzer\\v3.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\tone_analyzer\\v3.js"
     },
     "watson-tradeoff-analytics-v1": {
      "name": "watson-tradeoff-analytics-v1",
@@ -841,7 +841,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\tradeoff_analytics\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\tradeoff_analytics\\v1.js"
     },
     "watson-tone-analyzer-v3-beta": {
      "name": "watson-tone-analyzer-v3-beta",
@@ -851,7 +851,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\tone_analyzer\\v3-beta.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\tone_analyzer\\v3-beta.js"
     },
     "watson-visual-recognition-v1": {
      "name": "watson-visual-recognition-v1",
@@ -863,7 +863,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\visual_recognition\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\visual_recognition\\v1.js"
     },
     "watson-visual-recognition-v3": {
      "name": "watson-visual-recognition-v3",
@@ -874,7 +874,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\visual_recognition\\v3.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\visual_recognition\\v3.js"
     },
     "watson-similarity-search-v3": {
      "name": "watson-similarity-search-v3",
@@ -885,7 +885,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\similarity_search\\v3.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\similarity_search\\v3.js"
     },
     "alchemy-vision-v1": {
      "name": "alchemy-vision-v1",
@@ -895,7 +895,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-watson",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-watson\\services\\alchemy_vision\\v1.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-watson\\services\\alchemy_vision\\v1.js"
     }
    }
   },
@@ -914,7 +914,7 @@
      "enabled": true,
      "local": false,
      "module": "node-red-node-cf-cloudant",
-     "file": "d:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\git_latest\\maw-simulatorUI\\node_modules\\node-red-node-cf-cloudant\\77-cloudant-cf.js"
+     "file": "D:\\SANKET_BHALERAO\\project\\MOTOR@WORKS\\testrest\\restcheck\\node_modules\\node-red-node-cf-cloudant\\77-cloudant-cf.js"
     }
    }
   }
