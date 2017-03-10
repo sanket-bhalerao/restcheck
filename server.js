@@ -53,7 +53,8 @@ var options = {
   host: "pxc4ql.internetofthings.ibmcloud.com",
   path: '/api/v0002/device/types/mATwDevType/devices/',
   method: 'GET',
-  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
+  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R',
+  headers: { 'Content-Type': 'application/json' }
 };
 
 // app.get("/devices",function(request,response){
@@ -83,8 +84,6 @@ router.route("/devices").get(
     https.request(options, function(res) {
       var some = {};
       res.setEncoding('utf8');
-      res.setHeader('Content-Type', 'application/json');
-      // res.setContentType("application/json");
       res.on('data', function (data) {
         resJson=data;
         some=data;
@@ -95,12 +94,12 @@ router.route("/devices").get(
           if(resJson.results[idx].typeId == "mATwDevType"){
             console.log("device id : "+ resJson.results[idx].deviceId);
             retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
-          } 
+          }
         }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
       });
-      console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% " +JSON.stringify(resJson));
+
     }).end();
     response.json(retJson);
   }
