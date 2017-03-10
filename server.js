@@ -53,8 +53,8 @@ var options = {
   host: "pxc4ql.internetofthings.ibmcloud.com",
   path: '/api/v0002/device/types/mATwDevType/devices/',
   method: 'GET',
-  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R',
-  headers: { 'Content-Type': 'application/json' }
+  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
+  // , headers: { 'Content-Type': 'application/json' }
 };
 
 // app.get("/devices",function(request,response){
