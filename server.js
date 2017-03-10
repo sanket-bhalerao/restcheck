@@ -86,7 +86,7 @@ router.route("/devices").get(
       res.on('data', function (data) {
         resJson=data;
         some=data;
-        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
+        console.log("******************************** " +JSON.stringify(some));
 
         // for(var idx = 0; idx< resJson.results ; idx++){
         //   if(resJson.results[idx].typeId == "mATwDevType"){
@@ -95,11 +95,11 @@ router.route("/devices").get(
         // }
 
       }).on('end', function() {
-        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ " +JSON.stringify(some));
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
       });
-      console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(resJson));
+      console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% " +JSON.stringify(resJson));
     }).end();
     response.json(retJson);
   }
