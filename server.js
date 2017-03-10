@@ -53,7 +53,7 @@ var options = {
   path: '/api/v0002/device/types/mATwDevType/devices/OWASA-WTUL9215MO',
   method: 'GET',
   auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
-};
+}; 
 app.get("/devices",function(request,response){
   var resJson = null;
   var retJson = {};
