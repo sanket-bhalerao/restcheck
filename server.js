@@ -89,14 +89,13 @@ router.route("/devices").get(
         some+=data;
       }).on('end', function() {
 
-        resJson=JSON.parse(some);
-        resJson = JSON.parse(resJson);
-        for(var idx = 0; idx< resJson.results ; idx++){
-          if(resJson.results[idx].typeId == "mATwDevType"){
-            console.log("device id : "+ resJson.results[idx].deviceId);
-            retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
-          }
-        }
+        retJson=some;
+        // for(var idx = 0; idx< resJson.results ; idx++){
+        //   if(resJson.results[idx].typeId == "mATwDevType"){
+        //     console.log("device id : "+ resJson.results[idx].deviceId);
+        //     retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
+        //   }
+        // }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
       });
