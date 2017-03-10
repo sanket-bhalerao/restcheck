@@ -88,15 +88,16 @@ router.route("/devices").get(
         console.error(data);
         console.error("########################################################################");
 
-        for(var idx = 0; idx< resJson.results ; idx++){
-          if(resJson.results[idx].typeId == "mATwDevType"){
-            retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
-          }
-        }
+        // for(var idx = 0; idx< resJson.results ; idx++){
+        //   if(resJson.results[idx].typeId == "mATwDevType"){
+        //     retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
+        //   }
+        // }
+        response.json(retJson);
       });
     }).end();
 
-    response.json(retJson);
+
 
 
   }
