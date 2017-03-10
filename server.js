@@ -86,10 +86,8 @@ router.route("/devices").get(
       res.setEncoding('utf8');
       res.on('data', function (data) {
         // resJson=data;
-        some=data;
+        some+=data;
       }).on('end', function() {
-
-
         resJson=some;
         console.log("resJson : " + JSON.stringify(resJson));
         for(var idx = 0; idx< resJson.results ; idx++){
