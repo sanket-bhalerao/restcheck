@@ -43,17 +43,19 @@ app.use( nrSettings.httpAdminRoot, RED.httpAdmin );
 
 // Serve the http nodes from /
 app.use( nrSettings.httpNodeRoot, RED.httpNode );
-app.use("/devices",RED.);
+app.use(nrSettings.httpApiRoot,RED.httpApi);
 
 httpServer.listen( nrPort, function(){
   console.log('Express 4 server listening on port %s, serving node-red', nrPort);
 });
+
 var options = {
   host: "pxc4ql.internetofthings.ibmcloud.com",
   path: '/api/v0002/device/types/mATwDevType/devices/OWASA-WTUL9215MO',
   method: 'GET',
   auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
-}; 
+};
+
 app.get("/devices",function(request,response){
   var resJson = null;
   var retJson = {};

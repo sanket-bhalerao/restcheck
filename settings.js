@@ -31,7 +31,7 @@ module.exports = {
 
 	// Access the admin web i/f from http://<nrSrv>/admin
   httpAdminRoot:'/admin',
-
+  httpApiRoot:"/api",
   /*
 	// see http://nodered.org/docs/security.html for custom schemes
 	adminAuth: { // Generate pw: node -e 'console.log(require('bcryptjs').hashSync(process.argv[1], 8));' your-password-here
