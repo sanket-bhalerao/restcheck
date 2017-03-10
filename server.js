@@ -81,10 +81,12 @@ router.route("/devices").get(
     var resJson = {};
     var retJson = {};
     http.request(options, function(res) {
+      var some = {};
       res.setEncoding('utf8');
       res.on('data', function (data) {
         resJson=data;
-        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(data));
+        some=data;
+        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
 
         // for(var idx = 0; idx< resJson.results ; idx++){
         //   if(resJson.results[idx].typeId == "mATwDevType"){
@@ -92,6 +94,10 @@ router.route("/devices").get(
         //   }
         // }
 
+      }).on('end', function() {
+          console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
+        // At this point, we have the headers, method, url and body, and can now
+        // do whatever we need to in order to respond to this request.
       });
       console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(resJson));
     }).end();
