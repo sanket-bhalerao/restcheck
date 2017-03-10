@@ -12,7 +12,7 @@
 'use strict';  /* always for Node.JS, never global in the browser */
 var cfenv = require('cfenv');
 var http 	= require('http'),
-var https 	= require('https'),
+ https 	= require('https'),
 express = require('express'),  // THE std library for serving HTTP
 RED     = require('node-red'),
 nrSettings = require('./settings.js') // Node-Red settings file
