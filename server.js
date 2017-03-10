@@ -82,7 +82,8 @@ router.route("/devices").get(
     var retJson = {};
     https.request(options, function(res) {
       var some = {};
-      // res.setEncoding('utf8');
+      res.setEncoding('utf8');
+      res.setContentType("application/json");
       res.on('data', function (data) {
         resJson=data;
         some=data;
@@ -92,7 +93,7 @@ router.route("/devices").get(
 
       }).on('end', function() {
         console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ " +JSON.stringify(some));
-        resJson=some;
+        resJson=JSON.parse(some);
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
             retJson[resJson.results[idx].deviceId]=resJson.results[idx].metadata;
