@@ -4,18 +4,18 @@
 /*global: */
 
 /***
- * Start an instance of Node-Red under Express.JS
- *
- * Allows multiple instances of Node-Red to be run, even different versions in parallel.
- ***/
+* Start an instance of Node-Red under Express.JS
+*
+* Allows multiple instances of Node-Red to be run, even different versions in parallel.
+***/
 
 'use strict';  /* always for Node.JS, never global in the browser */
 var cfenv = require('cfenv');
 var http 	= require('http'),
-    //https 	= require('https'),
-    express = require('express'),  // THE std library for serving HTTP
-    RED     = require('node-red'),
-    nrSettings = require('./settings.js') // Node-Red settings file
+var https 	= require('https'),
+express = require('express'),  // THE std library for serving HTTP
+RED     = require('node-red'),
+nrSettings = require('./settings.js') // Node-Red settings file
 ;
 var appEnv = cfenv.getAppEnv();
 // The TCP port for this systems web interface - picked up from env, package.json or fixed value
@@ -80,7 +80,7 @@ router.route("/devices").get(
 
     var resJson = {};
     var retJson = {};
-    http.request(options, function(res) {
+    https.request(options, function(res) {
       var some = {};
       res.setEncoding('utf8');
       res.on('data', function (data) {
@@ -95,7 +95,7 @@ router.route("/devices").get(
         // }
 
       }).on('end', function() {
-          console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
+        console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(some));
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
       });
