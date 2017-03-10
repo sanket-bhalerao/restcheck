@@ -89,9 +89,8 @@ router.route("/devices").get(
         some+=data;
       }).on('end', function() {
 
-        some = some.replace(/\\/g, '');
-        console.log("some : " +JSON.stringify(some)); 
         resJson=JSON.parse(some);
+        resJson = JSON.parse(resJson);
         for(var idx = 0; idx< resJson.results ; idx++){
           if(resJson.results[idx].typeId == "mATwDevType"){
             console.log("device id : "+ resJson.results[idx].deviceId);
