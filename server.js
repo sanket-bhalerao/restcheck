@@ -84,7 +84,9 @@ router.route("/devices").get(
       res.setEncoding('utf8');
       res.on('data', function (data) {
         resJson=data;
-        node.log(data);
+        console.error("########################################################################");
+        console.error(data);
+        console.error("########################################################################");
       });
     }).end();
     for(var idx = 0; idx< resJson.results ; idx++){
