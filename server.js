@@ -95,7 +95,7 @@ router.route("/devices").get(
         // }
 
       });
-      console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +resJson);
+      console.log("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm " +JSON.stringify(resJson));
     }).end();
     response.json(retJson);
   }
