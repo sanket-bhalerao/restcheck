@@ -99,7 +99,7 @@ window.onload = function () {
          var select = document.getElementById("referenceNumber");
         for(var i = 0; i < devicesArr.devices.length ; i++) {
             var option = document.createElement('option');
-            option.text = option.value = i;
+            option.text = option.value = devicesArr.devices[i];
             select.add(option, 0);
     }
       }
