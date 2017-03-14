@@ -96,16 +96,16 @@ router.route("/devices").get(
         var tmp = JSON.parse(tmpSome);
         console.log("{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}" + tmp.results);
         console.log("{{{{{{{{{{{{{{{{{{{{{{))))))))))))))))))))))" + JSON.stringify(tmp.results));
-        // for(var idx = 0; idx< tmp.results ; idx++){
-        //   if(tmp.results[idx].typeId == "mATwDevType"){
-        //     console.log("device id : "+ tmp.results[idx].deviceId);
-        //     retJson[tmp.results[idx].deviceId]=tmp.results[idx].metadata;
-        //   }
-        // }
+        for(var idx = 0; idx< tmp.results.length ; idx++){
+          if(tmp.results[idx].typeId == "mATwDevType"){
+            console.log("device id : "+ tmp.results[idx].deviceId);
+            retJson[tmp.results[idx].deviceId]=tmp.results[idx].metadata;
+          }
+        }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
         response.setHeader('Content-Type', 'application/json');
-          response.json(tmp);
+          response.json(retJson);
       });
 
     }).end();
