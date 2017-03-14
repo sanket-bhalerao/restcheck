@@ -28,7 +28,7 @@ function updatefun() {
                 }
             } else
                 if (input.value === "") {
-                    data[input.name] = null;                    
+                    data[input.name] = null;
                 } else {
                     data[input.name] = Number(input.value);
                 }
@@ -36,7 +36,7 @@ function updatefun() {
         }
     }
     //action="https://maw-simulatorui.mybluemix.net/submeter"
-    //  method="POST" 
+    //  method="POST"
     console.log(JSON.stringify(data));
     // construct an HTTP request
     var xhr = new XMLHttpRequest();
@@ -88,4 +88,24 @@ function wsFunction() {
         resetfun();
         ws.close();
     };
+}
+
+window.onload = function () {
+  // https://restcheck.mybluemix.net/api/devices
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         var devicesArr = JSON.parse(xhr.responseText);
+         var select = document.getElementById("referenceNumber");
+        for(var i = 0; i < devicesArr.devices.length ; i++) {
+            var option = document.createElement('option');
+            option.text = option.value = i;
+            select.add(option, 0);
+    }
+      }
+  };
+  xhr.open("GET", "api/devices", true);
+  // xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+  // send the collected data as JSON
+  xhr.send();
 }
