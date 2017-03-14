@@ -60,7 +60,7 @@ function resetfun() {
 }
 
 function wsFunction() {
-    var ws = new WebSocket("wss://maw-simulatorui.mybluemix.net/maw/ws");
+    var ws = new WebSocket("wss://restcheck.mybluemix.net/maw/ws");
     ws.onmessage = function (evt) {
         var received_msg = evt.data;
         var parsedMsg = JSON.parse(received_msg);
