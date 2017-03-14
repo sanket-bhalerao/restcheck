@@ -84,13 +84,14 @@ router.route("/devices").get(
     https.request(options, function(res) {
       var some = "";
       res.setEncoding('utf8');
+      res.setHeader('Content-Type', 'application/json');
       res.on('data', function (data) {
         // resJson=data;
         some+=data;
       }).on('end', function() {
 
         retJson=some;
-        retJson=retJson.replace(/\\/gi, "");  
+        retJson=retJson.replace(/\\/gi, "");
         console.log(retJson +">>>>>>>>>>>>>>>>>>>>>>>>>>");
         // for(var idx = 0; idx< resJson.results ; idx++){
         //   if(resJson.results[idx].typeId == "mATwDevType"){
@@ -100,6 +101,7 @@ router.route("/devices").get(
         // }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
+        response.setHeader('Content-Type', 'application/json');
           response.json(retJson);
       });
 
