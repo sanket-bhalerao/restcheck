@@ -19,19 +19,15 @@ function updatefun() {
                     var dd = new Date(input.value);
                     data[input.name] = dd.toISOString();
                 }
-            } else if (input.name == "referenceNumber") {
-                if (input.value === "") {
-                    document.getElementById("wsresponse").innerHTML = "Reference Number can not be blank";
-                    return false;
-                } else {
-                    data[input.name] = input.value;
-                }
-            } else
-                if (input.value === "") {
-                    data[input.name] = null;
-                } else {
-                    data[input.name] = Number(input.value);
-                }
+            } else if (input.type === "select-one") {
+                var e = document.getElementById("referenceNumber");
+                var strUser = e.options[e.selectedIndex].value;
+                data[input.name] = input.value;
+            } else if (input.value === "") {
+                data[input.name] = null;
+            } else {
+                data[input.name] = Number(input.value);
+            }
 
         }
     }

@@ -75,7 +75,7 @@
         "wires": [
             [
                 "36837140.0c56ee",
-                "8cb94182.a00c6"
+                "f5c41947.9321b8"
             ]
         ]
     },
@@ -294,7 +294,24 @@
         "wires": []
     },
     {
-        "id": "cfb10623.723ac8",
+        "id": "f5c41947.9321b8",
+        "type": "rbe",
+        "z": "3aae3582.cbcaba",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "x": 294.5,
+        "y": 352,
+        "wires": [
+            [
+                "8cb94182.a00c6"
+            ]
+        ]
+    },
+    {
+        "id": "66dff6cc.a63b98",
         "type": "ibmiot in",
         "z": "445c7dde.4fa144",
         "authentication": "apiKey",
@@ -315,29 +332,29 @@
         "allCommands": true,
         "allFormats": true,
         "qos": 0,
-        "x": 80,
-        "y": 146,
+        "x": 60,
+        "y": 150,
         "wires": [
             [
-                "7bc2b249.ab211c",
-                "bd2fbafb.6fbea8"
+                "73954b99.8dee1c",
+                "f5afdec4.4e72b8"
             ]
         ]
     },
     {
-        "id": "7bc2b249.ab211c",
+        "id": "73954b99.8dee1c",
         "type": "debug",
         "z": "445c7dde.4fa144",
         "name": "",
         "active": false,
         "console": "false",
         "complete": "true",
-        "x": 121,
-        "y": 256,
+        "x": 101,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "9bfbb010.2db31",
+        "id": "61ba268f.2ad2a",
         "type": "http request",
         "z": "445c7dde.4fa144",
         "name": "send to MatW api",
@@ -345,45 +362,45 @@
         "ret": "obj",
         "url": "http://54.225.109.199:8085/api/1.0/rest/motor/external/measurement",
         "tls": "",
-        "x": 533.0001068115234,
-        "y": 148,
+        "x": 513.0001068115234,
+        "y": 152,
         "wires": [
             [
-                "d8034470.b23078",
-                "d33692f6.7d851"
+                "df4b5786.8ce86",
+                "7f973bf5.83dae4"
             ]
         ]
     },
     {
-        "id": "d8034470.b23078",
+        "id": "df4b5786.8ce86",
         "type": "debug",
         "z": "445c7dde.4fa144",
         "name": "m@w response",
         "active": false,
         "console": "false",
         "complete": "payload",
-        "x": 702.0000152587891,
-        "y": 55,
+        "x": 682.0000152587891,
+        "y": 59,
         "wires": []
     },
     {
-        "id": "bd2fbafb.6fbea8",
+        "id": "f5afdec4.4e72b8",
         "type": "function",
         "z": "445c7dde.4fa144",
         "name": "Add Device ID",
         "func": "var incomingMsg = msg.payload;\nflow.set('deviceId',msg.deviceId)\nmsg.payload={};\nmsg.payload.data=[];\nmsg.payload.data[0]=incomingMsg;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 326.50001525878906,
-        "y": 147,
+        "x": 306.50001525878906,
+        "y": 151,
         "wires": [
             [
-                "9bfbb010.2db31"
+                "61ba268f.2ad2a"
             ]
         ]
     },
     {
-        "id": "1718ec9f.a852f3",
+        "id": "53f0d138.2f2bf8",
         "type": "ibmiot out",
         "z": "445c7dde.4fa144",
         "authentication": "apiKey",
@@ -397,24 +414,38 @@
         "qos": 0,
         "name": "IBM IoT",
         "service": "registered",
-        "x": 939.5000152587891,
-        "y": 149.8000030517578,
+        "x": 919.5000152587891,
+        "y": 153.8000030517578,
         "wires": []
     },
     {
-        "id": "d33692f6.7d851",
+        "id": "7f973bf5.83dae4",
         "type": "function",
         "z": "445c7dde.4fa144",
         "name": "Convertor",
         "func": "var devid = flow.get('deviceId');\nvar msg = {deviceId:devid,payload:msg.payload};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 745.5000152587891,
-        "y": 149,
+        "x": 725.5000152587891,
+        "y": 153,
         "wires": [
             [
-                "1718ec9f.a852f3"
+                "53f0d138.2f2bf8"
             ]
+        ]
+    },
+    {
+        "id": "8f653d60.ff5f68",
+        "type": "function",
+        "z": "445c7dde.4fa144",
+        "name": "",
+        "func": "var https = context.global.https;\nvar payload = msg.payload;\nvar metadata={};\nvar options = {\n  host: \"pxc4ql.internetofthings.ibmcloud.com\",\n  path: '/api/v0002/device/types/mATwDevType/devices/'+msg.deviceId,\n  method: 'GET',\n  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'\n};\n\nhttps.request(options, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        metadata=tmp.metadata;\n      });\n    }).end();\n\n//http://54.225.109.199:8085/api/1.0/rest/motor/external/measurement\nvar options2 = {\n  host: \"54.225.109.199\",\n  port:'8085',\n  path: 'api/1.0/rest/motor/external/measurement',\n  method: 'PUT',\n  auth:metadata.uname+':'+metadata.pwd\n};\n\nvar msg1={};\nhttps.request(options2, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        msg1 = {deviceId:msg.deviceId,payload:tmp.payload};\n      });\n    }).end(msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 373,
+        "y": 251,
+        "wires": [
+            []
         ]
     }
 ]

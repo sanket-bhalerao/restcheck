@@ -141,6 +141,7 @@ module.exports = {
       //'nrPort'        : nrPort,
       // -- Pass in Libraries for convenience in function nodes -- //
       'path'          : path      // path library for cross-platform file system specs
+      ,'https':require('https')
 	}
 
 	// --- End of Node configuration --- //
