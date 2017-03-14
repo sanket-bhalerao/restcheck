@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
- 
+
 <body style="background-image: url(./images/02BG.JPG);background-size:cover">
     <div>
         <span class="motor-heading">
@@ -28,7 +28,10 @@
                     <span>Reference No</span><span style="color: red">*</span>
                 </div>
                 <div class="box-item">
-                    <input type="text" name="referenceNumber" class="box-input" required>
+                    <!-- <input type="text" name="referenceNumber" class="box-input" required> -->
+                    <select name="referenceNumber" class="box-input" required>
+                      
+                    </select>
                 </div>
             </div>
             <div class="box-row">
@@ -36,7 +39,7 @@
                     <span class="item-label">Date</span><span style="color: red">*</span>
                 </div>
                 <div class="box-item">
-                    <input type="datetime-local" placeholder="mm/dd/yyyy hh:mm AMPM" name="measurementDate" class="box-input" required>
+                    <input type="datetime-local" placeholder="mm/dd/yyyy hh:mm AMPM" tooltip="mm/dd/yyyy hh:mm AM/PM" name="measurementDate" class="box-input" required>
                 </div>
             </div>
             <div class="box-row">
@@ -163,7 +166,7 @@
     <script>
          wsFunction();
     </script>
-    
+
 </body>
 
 </html>
