@@ -98,10 +98,11 @@ router.route("/devices").get(
         // }
         // At this point, we have the headers, method, url and body, and can now
         // do whatever we need to in order to respond to this request.
+          response.json(retJson);
       });
 
     }).end();
-    response.json(retJson);
+
   }
 );
 app.use("/api",router);
