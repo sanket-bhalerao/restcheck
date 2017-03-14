@@ -84,7 +84,7 @@ router.route("/devices").get(
     https.request(options, function(res) {
       var some = "";
       res.setEncoding('utf8');
-      res.setHeader('Content-Type', 'application/json');
+      // res.setHeader('Content-Type', 'application/json');
       res.on('data', function (data) {
         // resJson=data;
         some+=data;
