@@ -91,9 +91,10 @@ router.route("/devices").get(
       }).on('end', function() {
 
         // retJson=some;
-        some=some.replace(/\\/gi, "");
-        console.log(retJson +">>>>>>>>>>>>>>>>>>>>>>>>>>");
-        var tmp = JSON.parse(some);
+      var   tmpSome=some.replace(/\\/gi, "");
+
+        var tmp = JSON.parse(tmpSome);
+        console.log("{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}" + JSON.stringify(tmp.results));
         for(var idx = 0; idx< tmp.results ; idx++){
           if(tmp.results[idx].typeId == "mATwDevType"){
             console.log("device id : "+ tmp.results[idx].deviceId);
