@@ -50,10 +50,10 @@ httpServer.listen( nrPort, function(){
 });
 
 var options = {
-  host: "pxc4ql.internetofthings.ibmcloud.com",
-  path: '/api/v0002/device/types/mATwDevType/devices/',
+  host: "2i34hz.internetofthings.ibmcloud.com",
+  path: '/api/v0002/device/types/testDevType/devices/',
   method: 'GET',
-  auth:'a-pxc4ql-6w29om6quk:4p_(w3Z5e612@1t99R'
+  auth:'a-2i34hz-s6qxamgn4w:zKmhgHudy8gk!P6M(T'
   // , headers: { 'Content-Type': 'application/json' }
 };
 
