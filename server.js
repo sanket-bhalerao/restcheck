@@ -98,7 +98,7 @@ router.route("/devices").get(
         console.log("{{{{{{{{{{{{{{{{{{{{{{))))))))))))))))))))))" + JSON.stringify(tmp.results));
         retJson.devices=[];
         for(var idx = 0; idx< tmp.results.length ; idx++){
-          if(tmp.results[idx].typeId == "mATwDevType"){
+          if(tmp.results[idx].typeId == "testDevType"){
             console.log("device id : "+ tmp.results[idx].deviceId);
             // retJson[tmp.results[idx].deviceId]=tmp.results[idx].metadata;
             retJson.devices.push(tmp.results[idx].deviceId);
