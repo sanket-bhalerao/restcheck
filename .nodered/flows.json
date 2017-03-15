@@ -75,7 +75,7 @@
         "wires": [
             [
                 "36837140.0c56ee",
-                "f5c41947.9321b8"
+                "8cb94182.a00c6"
             ]
         ]
     },
@@ -294,23 +294,6 @@
         "wires": []
     },
     {
-        "id": "f5c41947.9321b8",
-        "type": "rbe",
-        "z": "3aae3582.cbcaba",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "x": 294.5,
-        "y": 352,
-        "wires": [
-            [
-                "8cb94182.a00c6"
-            ]
-        ]
-    },
-    {
         "id": "66dff6cc.a63b98",
         "type": "ibmiot in",
         "z": "445c7dde.4fa144",
@@ -439,7 +422,7 @@
         "type": "function",
         "z": "445c7dde.4fa144",
         "name": "get meta",
-        "func": "var https = context.global.https;\nvar payload = msg.payload;\nvar metadata={};\nvar options = {\n  host: \"2i34hz.internetofthings.ibmcloud.com\",\n  path: '/api/v0002/device/types/testDevType/devices/'+msg.deviceId,\n  method: 'GET',\n  auth:'a-2i34hz-s6qxamgn4w:zKmhgHudy8gk!P6M(T'\n};\n\nhttps.request(options, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        metadata=tmp.metadata;\n        msg.metadata = {};\n        msg.metadata = metadata;\n      });\n    }).end();\nreturn msg;",
+        "func": "var https = context.global.https;\nvar payload = msg.payload;\nvar metadata={};\nvar options = {\n  host: \"2i34hz.internetofthings.ibmcloud.com\",\n  path: '/api/v0002/device/types/testDevType/devices/'+msg.deviceId,\n  method: 'GET',\n  auth:'a-2i34hz-s6qxamgn4w:zKmhgHudy8gk!P6M(T'\n};\n\nhttps.request(options, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        metadata=tmp.metadata;\n        msg.metadata = {};\n        msg.metadata = metadata;\n      });\n    }).end();\n    console.log(JSON.stringify(msg.metadata) + \" : oooooooooooooooooooooooooooo\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 504,
@@ -455,11 +438,11 @@
         "id": "ccf9b826.e10c8",
         "type": "function",
         "z": "445c7dde.4fa144",
-        "name": "",
-        "func": "var https = context.global.https;\nvar metadata = msg.metadata;\nvar options2 = {\n  host: \"54.225.109.199\",\n  port:'8085',\n  path: 'api/1.0/rest/motor/external/measurement',\n  method: 'PUT',\n  auth:metadata.uname+':'+metadata.pwd\n};\nconsole.log(\"4\");\nvar msg1={};\nvar req = https.request(options2, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        console.log(some +\"some 000000000000000\");\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        msg = {deviceId:msg.deviceId,payload:tmp.payload};\n      });\n    });\n    req.write(JSON.stringify(msg.payload));\n    req.end();\nconsole.log(\"5\");\nreturn msg;",
+        "name": "update in m@w",
+        "func": "var https = context.global.https;\nvar metadata = msg.metadata;\nconsole.log(JSON.stringify(metadata) + \"}}}}}}}}}}}}}}}}}}}}}}}}}}}}\");\nvar options2 = {\n  host: \"54.225.109.199\",\n  port:'8085',\n  path: 'api/1.0/rest/motor/external/measurement',\n  method: 'PUT',\n  auth:metadata.uname+':'+metadata.pwd\n};\nconsole.log(\"4\");\nvar msg1={};\nvar req = https.request(options2, function(res) {\n      var some = \"\";\n      res.setEncoding('utf8');\n      res.on('data', function (data) {\n        some+=data;\n      }).on('end', function() {\n        console.log(some +\"some 000000000000000\");\n        var tmpSome=some.replace(/\\\\/gi, \"\");\n        var tmp = JSON.parse(tmpSome);\n        msg = {deviceId:msg.deviceId,payload:tmp.payload};\n      });\n    });\n    req.write(JSON.stringify(msg.payload));\n    req.end();\nconsole.log(\"5\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 681,
+        "x": 711,
         "y": 165,
         "wires": [
             [
