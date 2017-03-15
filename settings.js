@@ -142,6 +142,7 @@ module.exports = {
       // -- Pass in Libraries for convenience in function nodes -- //
       'path'          : path      // path library for cross-platform file system specs
       ,'https':require('https')
+      ,'http':require('http')
 	}
 
 	// --- End of Node configuration --- //
